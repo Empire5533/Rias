@@ -19,7 +19,7 @@ A modular telegram Python bot running on python3 with an sqlalchemy, Redis, mong
 ╘══「 Can be found on telegram as [Rias Robot](http://t.me/Rias0_bot) 」
 
 ## ╒═══「 Credits 」
-The bot is based of on the original work done by [ES_Senapai] ()
+The bot is based of on the original work done by [ES_Senapai] (https://github.com/Empire5533/Rias robot)
 This repo was just reamped to suit an Anime-centric community. All original credits go to Paul and his dedication, Without his efforts, this fork would not have been possible!
 
 ### ╒═══「 Creator Info/Credits 」
