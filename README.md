@@ -24,7 +24,7 @@ This repo was just reamped to suit an Anime-centric community. All original cred
 
 ### ╒═══「 Creator Info/Credits 」
 
-+ ➢ []() : OWNER | DEV
++ ➢ [ES_Senpai](https://github.com/Empire5533) : OWNER | DEV
 
 
 
