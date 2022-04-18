@@ -1,11 +1,11 @@
 """
 MIT License
 
-Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2021 Awesome-RJ
-Copyright (c) 2021, Yūki • Black Knights Union, <https://github.com/Awesome-RJ/CutiepiiRobot>
+Copyright (C) 2017-2019, Waifu
+Copyright (C) 2021 Awesome-ES
+Copyright (c) 2021, Yūki • ES_Senpai, <https://github.com/Awesome-RJ/CutiepiiRobot>
 
-This file is part of @Cutiepii_Robot (Telegram Bot)
+This file is part of @Rias0_bot (Telegram Bot)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -34,12 +34,12 @@ import time
 import re
 import sys
 import traceback
-import Cutiepii_Robot.modules.sql.users_sql as sql
+import Rias0_Robot.modules.sql.users_sql as sql
 
 
 from sys import argv
 from typing import Optional
-from Cutiepii_Robot import (
+from Rias0_Robot import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -66,12 +66,12 @@ from Cutiepii_Robot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from Cutiepii_Robot.events import register
-from Cutiepii_Robot.modules import ALL_MODULES
-from Cutiepii_Robot.modules.helper_funcs.chat_status import is_user_admin
-from Cutiepii_Robot.modules.helper_funcs.alternate import typing_action
-from Cutiepii_Robot.modules.helper_funcs.misc import paginate_modules
-from Cutiepii_Robot.modules.disable import DisableAbleCommandHandler
+from Rias0_Rbot.events import register
+from Rias0_Robot.modules import ALL_MODULES
+from Rias0_Robot.modules.helper_funcs.chat_status import is_user_admin
+from Rias0_Robot.modules.helper_funcs.alternate import typing_action
+from Rias0_Robot.modules.helper_funcs.misc import paginate_modules
+from Rias0_Robot.modules.disable import DisableAbleCommandHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -96,23 +96,23 @@ from telethon import Button, events
 
 @telethn.on(events.NewMessage(pattern="/alive"))
 async def awake(event):
-  CUTIEPII = event.sender.first_name
-  CUTIEPII = "**♡ I,m Cutiepii Robot 愛** \n\n"
-  CUTIEPII += "**♡ I'm Working With Awesome Speed**\n\n"
-  CUTIEPII += "**♡ Cutiepii: LATEST Version**\n\n"
-  CUTIEPII += "**♡ My Creator:** [Rajkumar](t.me/Awesome_RJ)\n\n"
-  CUTIEPII += "**♡ python-Telegram-Bot: 13.7**\n\n"
-  CUTIEPII_BUTTON = [
+  RIAS = event.sender.first_name
+  RIAS = "**♡ I,m Rias Robot ** \n\n"
+  RIAS += "**♡ I'm Working With Awesome Speed**\n\n"
+  RIAS += "**♡ Rias: LATEST Version**\n\n"
+  RIAS += "**♡ My Creator:** [Es_Senapai](@es_senpai)\n\n"
+  RIAS += "**♡ python-Telegram-Bot: 13.7**\n\n"
+  RIAS_BUTTON = [
       [
-          Button.url("🚑 Support", f"https://t.me/{SUPPORT_CHAT}"),
-          Button.url("📢 Updates", "https://t.me/Black_Knights_Union")
+          Button.url("🚑 Support", f"https://t.me/rias_bot00}"),
+          Button.url("📢 Updates", "https://t.me/rias_bot0")
       ]
   ]
   await telethn.send_file(
       event.chat_id,
-      CUTIEPII_PHOTO,
-      caption = CUTIEPII,
-      buttons = CUTIEPII_BUTTON,
+      RIAS_PHOTO,
+      caption = RIAS,
+      buttons = RIAS_BUTTON,
   )
 
     
@@ -144,8 +144,8 @@ HELP_MSG = "Click the button below to get help manu in your pm."
 START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
     
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/2909a312d9438798d237a.png) 」────
-*Hola! {},*
+────「 [{}](https://https://telegra.ph/file/2543b45b2547f617c9e94.jpg) 」────
+*Hello! {},*
 *I am an Anime themed advance group management bot with a lot of Sexy Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 • *Uptime:* `{}`
@@ -167,16 +167,16 @@ buttons = [
                     ],
                    [
                        InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
-                       InlineKeyboardButton(text="❔ Chit Chat", url="https://t.me/HindiKDrama"),
+                       InlineKeyboardButton(text="❔ Chit Chat", url="https://t.me/estofficial0"),
                        InlineKeyboardButton(text="[► Inline ◄]", switch_inline_query_current_chat=""),
                      ],
                     [                  
                        InlineKeyboardButton(
                              text="🚑 Support",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
+                             url=f"https://t.me/rias_bot00"),
                        InlineKeyboardButton(
                              text="📢 Updates",
-                             url="https://t.me/Black_Knights_Union")
+                             url="https://t.me/rias_bot0")
                      ], 
     ]
 
@@ -205,7 +205,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("Cutiepii_Robot.modules." + module_name)
+    imported_module = importlib.import_module("Rias_Robot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -255,7 +255,7 @@ def send_help(chat_id, text, keyboard=None):
 
 def test(update: Update, context: CallbackContext):
     # pprint(eval(str(update)))
-    # update.effective_message.reply_text("Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
+    # update.effective_message.reply_text("Hello tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
     update.effective_message.reply_text("This person edited a message")
     print(update.effective_message)
 
