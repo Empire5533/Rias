@@ -2,8 +2,8 @@
 MIT License
 
 Copyright (C) 2017-2019, Waifu
-Copyright (C) 2021 Awesome-ES
-Copyright (c) 2021, Yūki • ES_Senpai, <https://github.com/Awesome-RJ/CutiepiiRobot>
+Copyright (C) 2021 LegendaryES
+Copyright (c) 2021, Yūki • ES_Senpai, <https://github.com/Empire5533/Rias0_robot>
 
 This file is part of @Rias0_bot (Telegram Bot)
 
