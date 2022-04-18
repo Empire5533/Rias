@@ -1,5 +1,5 @@
 ![Rias](https://telegra.ph/file/2543b45b2547f617c9e94.jpg)
-# 𝑪𝒖𝒕𝒊𝒆𝒑𝒊𝒊 𝑹𝒐𝒃𝒐𝒕
+# Rias Robot
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html) [![DeepSource](https://static.deepsource.io/deepsource-badge-light-mini.svg)](https://deepsource.io/gh/Legendary ES/RiasRobot/?ref=repository-badge)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/41ee9ac813a34042925a6b6fa92cf84e)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Akeno/Lynda&amp;utm_campaign=Badge_Grade) [![Join Support!](https://t.me/estofficial0)](https://https://t.me/rias_bot00)[![GitHub contributors](https://GitHub.com/Awesome-RJ/CutiepiiRobot/graphs/contributors/)
 
